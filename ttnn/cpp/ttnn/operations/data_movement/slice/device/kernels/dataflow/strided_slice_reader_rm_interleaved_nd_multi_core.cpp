@@ -10,6 +10,10 @@ void kernel_main() {
     const uint32_t start_row = get_arg_val<uint32_t>(1);
     const uint32_t num_rows_assigned = get_arg_val<uint32_t>(2);
 
+    //DEBUG
+    DPRINT << "Reader kernel starting, dims=" << dims << ENDL();
+    DPRINT << "num_rows_assigned=" << num_rows_assigned << ENDL();
+
     // Offsets:
     // [0] - input base addr
     // [1] - start row
